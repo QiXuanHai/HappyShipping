@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC70FA6F1CD60603006C2F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA6E1CD60603006C2F5B /* main.m */; };
+		DC70FA721CD60603006C2F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA711CD60603006C2F5B /* AppDelegate.m */; };
+		DC70FA751CD60603006C2F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA741CD60603006C2F5B /* ViewController.m */; };
+		DC70FA781CD60603006C2F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC70FA761CD60603006C2F5B /* Main.storyboard */; };
+		DC70FA7A1CD60603006C2F5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC70FA791CD60603006C2F5B /* Images.xcassets */; };
+		DC70FA7D1CD60603006C2F5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC70FA7B1CD60603006C2F5B /* LaunchScreen.xib */; };
+		DC70FA891CD60603006C2F5B /* HappyShopping_LGHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA881CD60603006C2F5B /* HappyShopping_LGHTests.m */; };
+		DC7955E11CD749F900A85812 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955E01CD749F900A85812 /* HomePageViewController.m */; };
+		DC7955E51CD7501200A85812 /* NinePointNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955E41CD7501200A85812 /* NinePointNineViewController.m */; };
+		DC7955E81CD7503C00A85812 /* NineteenPointNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955E71CD7503C00A85812 /* NineteenPointNineViewController.m */; };
+		DC7955EB1CD7504F00A85812 /* BandSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955EA1CD7504F00A85812 /* BandSaleViewController.m */; };
+		DC7955EE1CD7505800A85812 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955ED1CD7505800A85812 /* MineViewController.m */; };
+		DC7955FB1CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955F81CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		DC7955FC1CD75F0900A85812 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955FA1CD75F0900A85812 /* UIView+SDAutoLayout.m */; };
+		DC7956021CD764D900A85812 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955FF1CD764D900A85812 /* MyButton.m */; };
+		DC7956031CD764D900A85812 /* UIButton+NormallyButtonCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7956011CD764D900A85812 /* UIButton+NormallyButtonCreater.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC70FA831CD60603006C2F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC70FA611CD60603006C2F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC70FA681CD60603006C2F5B;
+			remoteInfo = HappyShopping_LGH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC70FA691CD60603006C2F5B /* HappyShopping_LGH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyShopping_LGH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC70FA6D1CD60603006C2F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC70FA6E1CD60603006C2F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC70FA701CD60603006C2F5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC70FA711CD60603006C2F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC70FA731CD60603006C2F5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC70FA741CD60603006C2F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC70FA771CD60603006C2F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC70FA791CD60603006C2F5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC70FA7C1CD60603006C2F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC70FA821CD60603006C2F5B /* HappyShopping_LGHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyShopping_LGHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC70FA871CD60603006C2F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC70FA881CD60603006C2F5B /* HappyShopping_LGHTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyShopping_LGHTests.m; sourceTree = "<group>"; };
+		DC7955DF1CD749F900A85812 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		DC7955E01CD749F900A85812 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		DC7955E21CD74A3100A85812 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DC7955E31CD7501200A85812 /* NinePointNineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NinePointNineViewController.h; sourceTree = "<group>"; };
+		DC7955E41CD7501200A85812 /* NinePointNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NinePointNineViewController.m; sourceTree = "<group>"; };
+		DC7955E61CD7503C00A85812 /* NineteenPointNineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineteenPointNineViewController.h; sourceTree = "<group>"; };
+		DC7955E71CD7503C00A85812 /* NineteenPointNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineteenPointNineViewController.m; sourceTree = "<group>"; };
+		DC7955E91CD7504F00A85812 /* BandSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandSaleViewController.h; sourceTree = "<group>"; };
+		DC7955EA1CD7504F00A85812 /* BandSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandSaleViewController.m; sourceTree = "<group>"; };
+		DC7955EC1CD7505800A85812 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		DC7955ED1CD7505800A85812 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		DC7955F71CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		DC7955F81CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		DC7955F91CD75F0900A85812 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		DC7955FA1CD75F0900A85812 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		DC7955FE1CD764D900A85812 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		DC7955FF1CD764D900A85812 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		DC7956001CD764D900A85812 /* UIButton+NormallyButtonCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NormallyButtonCreater.h"; sourceTree = "<group>"; };
+		DC7956011CD764D900A85812 /* UIButton+NormallyButtonCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NormallyButtonCreater.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC70FA661CD60603006C2F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC70FA7F1CD60603006C2F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC70FA601CD60603006C2F5B = {
+			isa = PBXGroup;
+			children = (
+				DC7955E21CD74A3100A85812 /* PrefixHeader.pch */,
+				DC70FA6B1CD60603006C2F5B /* HappyShopping_LGH */,
+				DC70FA851CD60603006C2F5B /* HappyShopping_LGHTests */,
+				DC70FA6A1CD60603006C2F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC70FA6A1CD60603006C2F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC70FA691CD60603006C2F5B /* HappyShopping_LGH.app */,
+				DC70FA821CD60603006C2F5B /* HappyShopping_LGHTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC70FA6B1CD60603006C2F5B /* HappyShopping_LGH */ = {
+			isa = PBXGroup;
+			children = (
+				DC70FA961CD60707006C2F5B /* MyUIControler */,
+				DC70FA971CD60724006C2F5B /* Medol */,
+				DC70FA951CD60703006C2F5B /* Resources */,
+				DC70FA941CD606EF006C2F5B /* ThirdCatogery */,
+				DC70FA931CD606E9006C2F5B /* Tool */,
+				DC70FA921CD606E0006C2F5B /* UI */,
+				DC70FA701CD60603006C2F5B /* AppDelegate.h */,
+				DC70FA711CD60603006C2F5B /* AppDelegate.m */,
+				DC70FA731CD60603006C2F5B /* ViewController.h */,
+				DC70FA741CD60603006C2F5B /* ViewController.m */,
+				DC70FA761CD60603006C2F5B /* Main.storyboard */,
+				DC70FA791CD60603006C2F5B /* Images.xcassets */,
+				DC70FA7B1CD60603006C2F5B /* LaunchScreen.xib */,
+				DC70FA6C1CD60603006C2F5B /* Supporting Files */,
+			);
+			path = HappyShopping_LGH;
+			sourceTree = "<group>";
+		};
+		DC70FA6C1CD60603006C2F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC70FA6D1CD60603006C2F5B /* Info.plist */,
+				DC70FA6E1CD60603006C2F5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC70FA851CD60603006C2F5B /* HappyShopping_LGHTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC70FA881CD60603006C2F5B /* HappyShopping_LGHTests.m */,
+				DC70FA861CD60603006C2F5B /* Supporting Files */,
+			);
+			path = HappyShopping_LGHTests;
+			sourceTree = "<group>";
+		};
+		DC70FA861CD60603006C2F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC70FA871CD60603006C2F5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC70FA921CD606E0006C2F5B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955DD1CD749B800A85812 /* HomePage */,
+				DC7955DA1CD749B800A85812 /* 9.9Free */,
+				DC7955DB1CD749B800A85812 /* 19.9Free */,
+				DC7955DC1CD749B800A85812 /* BrandSale */,
+				DC7955DE1CD749B800A85812 /* Mine */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DC70FA931CD606E9006C2F5B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		DC70FA941CD606EF006C2F5B /* ThirdCatogery */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955F61CD75F0900A85812 /* SDAutoLayout */,
+			);
+			path = ThirdCatogery;
+			sourceTree = "<group>";
+		};
+		DC70FA951CD60703006C2F5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC70FA961CD60707006C2F5B /* MyUIControler */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955FD1CD764D900A85812 /* UiButtonCreate */,
+			);
+			path = MyUIControler;
+			sourceTree = "<group>";
+		};
+		DC70FA971CD60724006C2F5B /* Medol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medol;
+			sourceTree = "<group>";
+		};
+		DC7955DA1CD749B800A85812 /* 9.9Free */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955E31CD7501200A85812 /* NinePointNineViewController.h */,
+				DC7955E41CD7501200A85812 /* NinePointNineViewController.m */,
+			);
+			path = 9.9Free;
+			sourceTree = "<group>";
+		};
+		DC7955DB1CD749B800A85812 /* 19.9Free */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955E61CD7503C00A85812 /* NineteenPointNineViewController.h */,
+				DC7955E71CD7503C00A85812 /* NineteenPointNineViewController.m */,
+			);
+			path = 19.9Free;
+			sourceTree = "<group>";
+		};
+		DC7955DC1CD749B800A85812 /* BrandSale */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955E91CD7504F00A85812 /* BandSaleViewController.h */,
+				DC7955EA1CD7504F00A85812 /* BandSaleViewController.m */,
+			);
+			path = BrandSale;
+			sourceTree = "<group>";
+		};
+		DC7955DD1CD749B800A85812 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955DF1CD749F900A85812 /* HomePageViewController.h */,
+				DC7955E01CD749F900A85812 /* HomePageViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		DC7955DE1CD749B800A85812 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955EC1CD7505800A85812 /* MineViewController.h */,
+				DC7955ED1CD7505800A85812 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DC7955F61CD75F0900A85812 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955F71CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.h */,
+				DC7955F81CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.m */,
+				DC7955F91CD75F0900A85812 /* UIView+SDAutoLayout.h */,
+				DC7955FA1CD75F0900A85812 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		DC7955FD1CD764D900A85812 /* UiButtonCreate */ = {
+			isa = PBXGroup;
+			children = (
+				DC7955FE1CD764D900A85812 /* MyButton.h */,
+				DC7955FF1CD764D900A85812 /* MyButton.m */,
+				DC7956001CD764D900A85812 /* UIButton+NormallyButtonCreater.h */,
+				DC7956011CD764D900A85812 /* UIButton+NormallyButtonCreater.m */,
+			);
+			path = UiButtonCreate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC70FA681CD60603006C2F5B /* HappyShopping_LGH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC70FA8C1CD60603006C2F5B /* Build configuration list for PBXNativeTarget "HappyShopping_LGH" */;
+			buildPhases = (
+				DC70FA651CD60603006C2F5B /* Sources */,
+				DC70FA661CD60603006C2F5B /* Frameworks */,
+				DC70FA671CD60603006C2F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyShopping_LGH;
+			productName = HappyShopping_LGH;
+			productReference = DC70FA691CD60603006C2F5B /* HappyShopping_LGH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC70FA811CD60603006C2F5B /* HappyShopping_LGHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC70FA8F1CD60603006C2F5B /* Build configuration list for PBXNativeTarget "HappyShopping_LGHTests" */;
+			buildPhases = (
+				DC70FA7E1CD60603006C2F5B /* Sources */,
+				DC70FA7F1CD60603006C2F5B /* Frameworks */,
+				DC70FA801CD60603006C2F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC70FA841CD60603006C2F5B /* PBXTargetDependency */,
+			);
+			name = HappyShopping_LGHTests;
+			productName = HappyShopping_LGHTests;
+			productReference = DC70FA821CD60603006C2F5B /* HappyShopping_LGHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC70FA611CD60603006C2F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "梁国海";
+				TargetAttributes = {
+					DC70FA681CD60603006C2F5B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DC70FA811CD60603006C2F5B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DC70FA681CD60603006C2F5B;
+					};
+				};
+			};
+			buildConfigurationList = DC70FA641CD60603006C2F5B /* Build configuration list for PBXProject "HappyShopping_LGH" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC70FA601CD60603006C2F5B;
+			productRefGroup = DC70FA6A1CD60603006C2F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC70FA681CD60603006C2F5B /* HappyShopping_LGH */,
+				DC70FA811CD60603006C2F5B /* HappyShopping_LGHTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC70FA671CD60603006C2F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC70FA781CD60603006C2F5B /* Main.storyboard in Resources */,
+				DC70FA7D1CD60603006C2F5B /* LaunchScreen.xib in Resources */,
+				DC70FA7A1CD60603006C2F5B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC70FA801CD60603006C2F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC70FA651CD60603006C2F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7956031CD764D900A85812 /* UIButton+NormallyButtonCreater.m in Sources */,
+				DC7955E11CD749F900A85812 /* HomePageViewController.m in Sources */,
+				DC70FA751CD60603006C2F5B /* ViewController.m in Sources */,
+				DC70FA721CD60603006C2F5B /* AppDelegate.m in Sources */,
+				DC70FA6F1CD60603006C2F5B /* main.m in Sources */,
+				DC7955FC1CD75F0900A85812 /* UIView+SDAutoLayout.m in Sources */,
+				DC7955E51CD7501200A85812 /* NinePointNineViewController.m in Sources */,
+				DC7956021CD764D900A85812 /* MyButton.m in Sources */,
+				DC7955EB1CD7504F00A85812 /* BandSaleViewController.m in Sources */,
+				DC7955E81CD7503C00A85812 /* NineteenPointNineViewController.m in Sources */,
+				DC7955FB1CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				DC7955EE1CD7505800A85812 /* MineViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC70FA7E1CD60603006C2F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC70FA891CD60603006C2F5B /* HappyShopping_LGHTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC70FA841CD60603006C2F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC70FA681CD60603006C2F5B /* HappyShopping_LGH */;
+			targetProxy = DC70FA831CD60603006C2F5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC70FA761CD60603006C2F5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC70FA771CD60603006C2F5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC70FA7B1CD60603006C2F5B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC70FA7C1CD60603006C2F5B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC70FA8A1CD60603006C2F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC70FA8B1CD60603006C2F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC70FA8D1CD60603006C2F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INFOPLIST_FILE = HappyShopping_LGH/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC70FA8E1CD60603006C2F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INFOPLIST_FILE = HappyShopping_LGH/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC70FA901CD60603006C2F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HappyShopping_LGHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyShopping_LGH.app/HappyShopping_LGH";
+			};
+			name = Debug;
+		};
+		DC70FA911CD60603006C2F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HappyShopping_LGHTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyShopping_LGH.app/HappyShopping_LGH";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC70FA641CD60603006C2F5B /* Build configuration list for PBXProject "HappyShopping_LGH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC70FA8A1CD60603006C2F5B /* Debug */,
+				DC70FA8B1CD60603006C2F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC70FA8C1CD60603006C2F5B /* Build configuration list for PBXNativeTarget "HappyShopping_LGH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC70FA8D1CD60603006C2F5B /* Debug */,
+				DC70FA8E1CD60603006C2F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC70FA8F1CD60603006C2F5B /* Build configuration list for PBXNativeTarget "HappyShopping_LGHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC70FA901CD60603006C2F5B /* Debug */,
+				DC70FA911CD60603006C2F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC70FA611CD60603006C2F5B /* Project object */;
+}
