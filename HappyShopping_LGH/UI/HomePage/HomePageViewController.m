@@ -24,6 +24,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setHomePageVCNavigation];
+    
 }
 
 #pragma mark - 创建tableView
