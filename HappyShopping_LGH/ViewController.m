@@ -35,10 +35,6 @@
     
 }
 
-- (void)tapAction{
-    
-    
-}
 
 - (void)createNavigationView{
     
