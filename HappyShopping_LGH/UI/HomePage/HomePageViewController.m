@@ -20,10 +20,28 @@
 
 @implementation HomePageViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+//    [self setHomePageVCNavigation];
+//    
+//    UITapGestureRecognizer *searchTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(searchTapAction)];
+//    [self.searchBgV addGestureRecognizer:searchTap];
+    
+    UIImage *image = [UIImage imageNamed:@"shake_bg"];
+    self.logoImage = image;
+    
     [self setHomePageVCNavigation];
+}
+
+#pragma mark - 搜索栏执行的方法
+- (void)searchAction{
+    
+    NSLog(@"首页");
 }
 
 #pragma mark - 创建tableView
