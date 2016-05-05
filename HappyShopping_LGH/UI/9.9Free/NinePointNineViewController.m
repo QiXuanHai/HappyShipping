@@ -38,10 +38,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     
+    [self setNinePointNineVCNavigation];
+    
     [self setTopButton];
     
     [self setScrollViewAndCollectionView];
     
+    [self.view addSubview:self.gwcbtnImgV];
 }
 
 

@@ -35,6 +35,10 @@
     
 }
 
+- (void)tapAction{
+    
+    NSLog(@"sajfajlsd");
+}
 
 - (void)createNavigationView{
     

@@ -23,8 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setHomePageVCNavigation];
     
+    UIImage *image = [UIImage imageNamed:@"shake_bg"];
+    self.logoImage = image;
+    
+    [self setHomePageVCNavigation];
 }
 
 #pragma mark - 创建tableView
