@@ -25,6 +25,9 @@
     
     [self.view addSubview:self.gwcbtnImgV];
     self.gwcbtnImgV.sd_layout.leftSpaceToView(self.view,8).bottomSpaceToView(self.view,58).widthIs(30).heightIs(30);
+    
+    
+    
 }
 
 - (void)createNavigationView{
@@ -50,6 +53,9 @@
 
 #pragma mark - 设置9.9包邮导航栏
 - (void)setNinePointNineVCNavigation{
+    
+    
+    
 
 }
 
