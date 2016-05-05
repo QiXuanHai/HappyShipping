@@ -37,7 +37,7 @@
 
 - (void)tapAction{
     
-    NSLog(@"jsalf");
+    
 }
 
 - (void)createNavigationView{
