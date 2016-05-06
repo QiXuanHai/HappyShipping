@@ -8,11 +8,12 @@
 
 #import "HomePageViewController.h"
 
-@interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomePageViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
-@property (strong,nonatomic) NSArray *dataArray;
 
-@property (strong,nonatomic) UITableView *tableView;
+@property (strong,nonatomic) NSMutableArray *dataArray;
+
+@property (strong,nonatomic) UICollectionView *collectionView;
 
 
 
@@ -28,35 +29,105 @@
     self.logoImage = image;
     
     [self setHomePageVCNavigation];
+    
+    [self createCollectionView];
 }
 
 #pragma mark - 创建tableView
-- (void)createTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
+- (void)createCollectionView{
     
-    self.tableView.rowHeight = 100;
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
+    UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
-    [self.view addSubview:self.tableView];
+    
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, NAVIGATION_HEIGHT, screenWidth, screenHeight - NAVIGATION_HEIGHT - 49) collectionViewLayout:flowLayout];
+    
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    
+    //    设置组头和组尾的大小
+    //flowLayout.footerReferenceSize = CGSizeMake(0, 70);
+    flowLayout.headerReferenceSize = CGSizeMake(0, 260);
+    
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    //    注册collectionView 头部视图的类
+    [self.collectionView registerClass:[UICollectionViewCell class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
+    
+//    //    注册collectionView 尾部视图的类
+//    [_collectionView registerClass:[UICollectionViewCell class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
+    
+    [self.view addSubview:_collectionView];
+
 }
 
-#pragma mark - tableView调用的方法
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+#pragma mark - 返回分组数
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    
+    return 1;
+}
+
+#pragma mark - 返回Item的个数
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
     return 10;
+    
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellId = @"cell";
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    static NSString * cellid = @"cell";
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-    }
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellid forIndexPath:indexPath];
+    
+    cell.contentView.backgroundColor = [UIColor redColor];
     
     return cell;
+    
+}
+
+#pragma mark - 返回每一个Item大小
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return CGSizeMake((screenWidth-28)/2,(5.0/8.0)*screenWidth);
+}
+
+#pragma mark - Item被选中的方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+}
+
+
+#pragma mark - 返回collectionView 头部或者尾部视图的方法
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    //    判断当前需要返回的是头部视图还是尾部视图
+    if (kind == UICollectionElementKindSectionHeader) {
+        //        如果返回的是头部视图,就先去查找一下
+        UICollectionViewCell * headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
+        if (headerView == nil) {
+            headerView = [[UICollectionViewCell alloc] init];
+            
+        }
+        
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth,260 )];
+        view.backgroundColor = [UIColor brownColor];
+        [headerView.contentView addSubview:view];
+        
+        
+        return headerView;
+        
+        
+    }else{
+        return nil;
+    }
+}
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(9, 9, 0, 9);
 }
 
 

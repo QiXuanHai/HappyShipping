@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC6CDC671CDB55E90020CC8D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6CDC661CDB55E90020CC8D /* CollectionViewController.m */; };
 		DC70FA6F1CD60603006C2F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA6E1CD60603006C2F5B /* main.m */; };
 		DC70FA721CD60603006C2F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA711CD60603006C2F5B /* AppDelegate.m */; };
 		DC70FA751CD60603006C2F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC70FA741CD60603006C2F5B /* ViewController.m */; };
@@ -24,6 +23,8 @@
 		DC7955FC1CD75F0900A85812 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955FA1CD75F0900A85812 /* UIView+SDAutoLayout.m */; };
 		DC7956021CD764D900A85812 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7955FF1CD764D900A85812 /* MyButton.m */; };
 		DC7956031CD764D900A85812 /* UIButton+NormallyButtonCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7956011CD764D900A85812 /* UIButton+NormallyButtonCreater.m */; };
+		DCBB99B41CDB6FBE00C9287F /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBB99B31CDB6FBE00C9287F /* CollectionViewController.m */; };
+		DCBB99B71CDB7E7C00C9287F /* HeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBB99B61CDB7E7C00C9287F /* HeaderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC6CDC651CDB55E90020CC8D /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		DC6CDC661CDB55E90020CC8D /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		DC70FA691CD60603006C2F5B /* HappyShopping_LGH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyShopping_LGH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC70FA6D1CD60603006C2F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC70FA6E1CD60603006C2F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +70,10 @@
 		DC7955FF1CD764D900A85812 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		DC7956001CD764D900A85812 /* UIButton+NormallyButtonCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NormallyButtonCreater.h"; sourceTree = "<group>"; };
 		DC7956011CD764D900A85812 /* UIButton+NormallyButtonCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NormallyButtonCreater.m"; sourceTree = "<group>"; };
+		DCBB99B21CDB6FBE00C9287F /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		DCBB99B31CDB6FBE00C9287F /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		DCBB99B51CDB7E7C00C9287F /* HeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewController.h; sourceTree = "<group>"; };
+		DCBB99B61CDB7E7C00C9287F /* HeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,8 @@
 		DC6CDC641CDB55E90020CC8D /* Unite */ = {
 			isa = PBXGroup;
 			children = (
-				DC6CDC651CDB55E90020CC8D /* CollectionViewController.h */,
-				DC6CDC661CDB55E90020CC8D /* CollectionViewController.m */,
+				DCBB99B21CDB6FBE00C9287F /* CollectionViewController.h */,
+				DCBB99B31CDB6FBE00C9287F /* CollectionViewController.m */,
 			);
 			path = Unite;
 			sourceTree = "<group>";
@@ -248,6 +251,8 @@
 			children = (
 				DC7955DF1CD749F900A85812 /* HomePageViewController.h */,
 				DC7955E01CD749F900A85812 /* HomePageViewController.m */,
+				DCBB99B51CDB7E7C00C9287F /* HeaderViewController.h */,
+				DCBB99B61CDB7E7C00C9287F /* HeaderViewController.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -393,7 +398,8 @@
 				DC7956021CD764D900A85812 /* MyButton.m in Sources */,
 				DC7955EB1CD7504F00A85812 /* BandSaleViewController.m in Sources */,
 				DC7955E81CD7503C00A85812 /* NineteenPointNineViewController.m in Sources */,
-				DC6CDC671CDB55E90020CC8D /* CollectionViewController.m in Sources */,
+				DCBB99B41CDB6FBE00C9287F /* CollectionViewController.m in Sources */,
+				DCBB99B71CDB7E7C00C9287F /* HeaderViewController.m in Sources */,
 				DC7955FB1CD75F0900A85812 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				DC7955EE1CD7505800A85812 /* MineViewController.m in Sources */,
 			);
